@@ -20,12 +20,14 @@ add_subdirectory(dll_user)
 # to copy generated binaries
 install(TARGETS dll_user
     # copy *.exe file
-    DESTINATION ${PROJECT_BINARY_DIR}/bin)
+    DESTINATION ${PROJECT_BINARY_DIR}/bin
+    )
 install(TARGETS TestDLL
     # copy *.dll file
     RUNTIME DESTINATION ${PROJECT_BINARY_DIR}/bin
     # copy public header(s)
-    PUBLIC_HEADER DESTINATION ${PROJECT_BINARY_DIR}/bin)
+    PUBLIC_HEADER DESTINATION ${PROJECT_BINARY_DIR}/bin
+    )
 # install(FILES ${PROJECT_BINARY_DIR}/dll_src/Debug/TestDLL.lib
 #     # copy *.lib file
 #     DESTINATION ${PROJECT_BINARY_DIR}/bin)

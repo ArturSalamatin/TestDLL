@@ -17,7 +17,7 @@ add_library(TestDLL SHARED ${HEADER_FILES}
                             ${SOURCE_FILES})
 set_target_properties(TestDLL PROPERTIES 
                         VERSION ${PROJECT_VERSION}
-                    #    PUBLIC_HEADER Wrapper.h
+                       PUBLIC_HEADER dll_src/Wrapper.h
                     )
 target_compile_definitions(TestDLL PRIVATE MYLIBRARY_EXPORT)
 target_include_directories(TestDLL INTERFACE
