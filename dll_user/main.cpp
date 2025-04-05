@@ -9,7 +9,7 @@ int main()
 
     delete instance;
 
-    std::cout << "inside main and Wrapper included";
+    std::cout << "inside main and Wrapper included" << std::endl;
 
     return 0;
 }
