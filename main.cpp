@@ -3,11 +3,11 @@
 
 int main()
 {
-    //  Wrapper* instance = new Wrapper();
+    Wrapper* instance = new Wrapper();
     //   instance->useOperator();
     //   instance->useManager();
 
-    //   delete instance;
+    delete instance;
 
     std::cout << "inside main and Wrapper included";
 
