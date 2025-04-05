@@ -8,8 +8,5 @@ target_include_directories(dll_user PUBLIC
 
 message(PROJECT_BINARY_DIR=${PROJECT_BINARY_DIR})
 
-# install(TARGETS dll_user 
-#     DESTINATION "${PROJECT_BINARY_DIR}/bin")
-
 install(TARGETS dll_user
     DESTINATION ${PROJECT_BINARY_DIR}/bin)
