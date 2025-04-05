@@ -3,7 +3,7 @@
 
 int main()
 {
-     Wrapper* instance = new Wrapper();
+    //  Wrapper* instance = new Wrapper();
     //   instance->useOperator();
     //   instance->useManager();
 

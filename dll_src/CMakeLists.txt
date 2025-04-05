@@ -6,14 +6,14 @@ set(SOURCE_FILES
 )
 
 # Add the header files to the project
-# set(HEADER_FILES
-#     Operator.h
-#     Manager.h
-#     Wrapper.h
-# )
+set(HEADER_FILES
+    src/Operator.h
+    src/Manager.h
+    Wrapper.h
+)
 
 # Create the shared library (DLL)
-add_library(TestDLL SHARED #${HEADER_FILES} 
+add_library(TestDLL SHARED ${HEADER_FILES} 
                             ${SOURCE_FILES})
 target_compile_definitions(TestDLL PRIVATE MYLIBRARY_EXPORT)
 target_include_directories(TestDLL PRIVATE
